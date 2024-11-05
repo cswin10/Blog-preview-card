@@ -1,0 +1,159 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body { 
+    min-height: 100vh;
+    width: 100vw;
+    font-family: 'Figtree', sans-serif;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: hsl(47, 88%, 63%);
+}
+
+.container {
+    max-height: 700px;
+    height: 100%;
+    width: 90%;
+    max-width: 500px;
+    background-color: #fff;
+    padding: 30px;
+    display: flex;
+    overflow: hidden;
+    flex-direction: column;
+    margin-bottom: 20px;
+    align-items: center;
+    border-radius: 15px;
+    border: 1px solid black;
+    box-shadow: 15px 15px 5px rgb(0, 0, 0);
+
+}
+
+.image-container {
+    height: 33%;
+    width: 100%;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    
+
+}
+
+.image-container img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+
+.learning {
+    align-self: flex-start;
+    background-color: hsl(47, 88%, 63%);
+    padding: 10px 14px;
+    font-weight: 900;
+    margin-bottom: 15px;
+    font-size: 1.1rem;
+    border-radius: 8px;
+}
+
+.date {
+    align-self: flex-start;
+    color: black;
+    font-weight: 600;
+    margin-bottom: 15px;
+}
+
+.main-text {
+    align-self: flex-start;
+    font-weight: 900;
+    font-size: 2rem;
+    margin-bottom: 15px;
+}
+
+.main-text:hover {
+    color: hsl(47, 88%, 63%);
+    cursor: pointer;
+}
+
+.gray-text {
+    font-size: 1.2rem;
+    color: rgba(43, 42, 42, 0.8);
+    margin-bottom: 20px;
+}
+
+
+
+
+
+
+
+
+
+.greg {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    width: 100%;
+}
+
+.greg .name {
+    font-weight: 800;
+    font-size: 1.2rem;
+    margin-top: 25px;
+    margin-left: 10px;
+}
+
+
+.greg img {
+    background-size: cover;
+}
+
+.attribution {
+    position: absolute;
+    bottom: 20px;
+}
+
+
+@media (max-height: 600px) {
+  .container {
+    max-height: 100%;
+    margin-top: 10px;
+    overflow-y: auto;
+    padding: 10px;
+}
+  .image-container {
+    height: 30%;
+  }
+  .main-text {
+    font-size: 1.5rem;
+  }
+  .learning, .date, .gray-text {
+    font-size: 0.9rem;
+    margin-bottom: 8px;
+  }
+  .attribution {
+    display: none;
+  }
+}
+
+@media (max-width: 450px) {
+    .container {
+        height: 100%;
+        max-width: 250px;
+    }
+    .learning, .date, .gray-text {
+        font-size: 0.9rem;
+        margin-bottom: 8px;
+    }
+    .main-text {
+        font-size: 1.4rem;
+    }
+    .greg img {
+        height: 40px;
+        width: 40px;
+    }
+}
